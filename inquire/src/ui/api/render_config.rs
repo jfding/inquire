@@ -188,7 +188,7 @@ impl<'a> RenderConfig<'a> {
             prompt: StyleSheet::empty(),
             default_value: StyleSheet::empty(),
             placeholder: StyleSheet::new().with_fg(Color::DarkGrey),
-            help_message: StyleSheet::empty().with_fg(Color::LightCyan),
+            help_message: StyleSheet::empty().with_fg(Color::DarkGrey),
             text_input: StyleSheet::empty(),
             error_message: ErrorMessageRenderConfig::default_colored(),
             password_mask: '*',

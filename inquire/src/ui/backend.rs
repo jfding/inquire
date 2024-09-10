@@ -300,8 +300,9 @@ where
     }
 
     fn render_help_message(&mut self, help: &str) -> Result<()> {
+
         self.frame_renderer
-            .write_styled(Styled::new("[").with_style_sheet(self.render_config.help_message))?;
+            .write_styled(Styled::new("\n[").with_style_sheet(self.render_config.help_message))?;
 
         self.frame_renderer
             .write_styled(Styled::new(help).with_style_sheet(self.render_config.help_message))?;
